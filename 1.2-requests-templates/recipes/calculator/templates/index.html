@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+<h1>{{recipe_name}}</h1>
+<ul>
+    {% for key, value in ingredients %}
+        <li>{{ key }} - {{ value }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+

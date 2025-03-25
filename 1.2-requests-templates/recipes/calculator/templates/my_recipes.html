@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+<h1>Список рецептов</h1><br>
+<ul style = 'color: blue; font-size: 20px'>
+{% for el in recipes_list %}
+    <li><a  href = {{el.title.lower }} >{{ el.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
